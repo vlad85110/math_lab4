@@ -18,6 +18,7 @@ fun main() {
         val future = threadPool.submit {
             val x = grid[i]
             values[x] = (1 - h).pow(i)
+            //values[j] = (1 - h) * x[j - 1]
         }
 
         tasks.add(future)
